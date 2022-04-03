@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles"
 import Card from "@mui/material/Card"
 
 import CardHeader from "@mui/material/CardHeader"
+import Box from "@mui/material/Box"
 import CardMedia from "@mui/material/CardMedia"
 import CardContent from "@mui/material/CardContent"
 import CardActions from "@mui/material/CardActions"
@@ -14,6 +15,8 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
 import YouTubeIcon from "@mui/icons-material/YouTube"
 import GitHubIcon from "@mui/icons-material/GitHub"
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew"
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
 
 import museummapper from "../../assets/museummapper.png"
 
@@ -45,9 +48,12 @@ function Museums() {
               <MoreVertIcon />
             </IconButton>
           }
-          title="Explore DC Museum Mapper"
+          title="Museum Mapper"
           subheader="Full Stack Application"
         />
+        <Typography variant="caption">
+          Explore DC & tickets to Smithsonian Museums
+        </Typography>
         <CardMedia
           component="img"
           height="194"
@@ -93,25 +99,40 @@ function Museums() {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography align="center" paragraph>
+            <Typography
+              style={{ justifyContent: "center" }}
+              align="center"
+              paragraph
+            >
               Description
             </Typography>
-            <Typography paragraph>
-              <Typography variant="caption" align="left">
-                Built Rails backend API using SQLite3 for data persistence and
-                BCrypt for authentication
-              </Typography>
-              <Typography variant="caption" align="left">
-                Followed RESTful conventions, applied MVC pattern, and built
-                CRUD functionality for resources
-              </Typography>
-              <Typography variant="caption" align="left">
-                Integrated third party data via MapBox and Stripe{" "}
-              </Typography>
-              <Typography variant="caption" align="left">
-                Designed sleek and intuitive UI with JavaScript React, MUI, and
-                custom CSS
-              </Typography>
+            <Typography align="left">
+              <ul>
+                <li>
+                  {" "}
+                  <Typography variant="caption" align="left">
+                    Built Rails backend API using SQLite3 for data persistence
+                    and BCrypt for authentication
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Followed RESTful conventions, applied MVC pattern, and built
+                    CRUD functionality for resources
+                  </Typography>{" "}
+                </li>{" "}
+                <li>
+                  <Typography variant="caption" align="left">
+                    Integrated third party data via MapBox and Stripe{" "}
+                  </Typography>{" "}
+                </li>{" "}
+                <li>
+                  <Typography variant="caption" align="left">
+                    Designed sleek and intuitive UI with JavaScript React, MUI,
+                    and custom CSS
+                  </Typography>
+                </li>
+              </ul>
             </Typography>
           </CardContent>
         </Collapse>

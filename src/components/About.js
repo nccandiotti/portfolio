@@ -21,26 +21,26 @@ const theme = createTheme({
 
 function About() {
   return (
-    <div style={{}}>
+    <div style={{ marginBottom: "30px" }}>
       <ThemeProvider theme={theme}>
         <Typography align="left" variant="h3">
           <span style={{ color: "#66D9EF" }}>function </span>
           <span style={{ color: "#A6E22E" }}>AboutMe</span>
-          <span style={{ color: "#E6DB74" }}> {`() {`}</span>
+          <span style={{ color: "#E6DB74" }}> {`(`}</span>
           <span
             style={{ fontSize: "20px", fontStyle: "italic", color: " #FD971F" }}
           >
             {" "}
-            {`Software Engineer,   Speech-Language Pathologist,   Linguist`}
+            {/* {`Software Engineer,   Speech-Language Pathologist,   Linguist`} */}
           </span>
 
           <span style={{ color: "#E6DB74" }}> {`) {`}</span>
         </Typography>
 
-        {/* <Typography sx={{ color: "#66D9EF", marginTop: "10px" }} theme={theme}>
+        <Typography sx={{ color: "#66D9EF", marginTop: "10px" }} theme={theme}>
           {" "}
           Software Engineer | Speech-Language Pathologist | Linguist
-        </Typography> */}
+        </Typography>
         <Typography
           variant="h6"
           sx={{ fontFamily: "Raleway", align: "left", margin: "10px 40px" }}

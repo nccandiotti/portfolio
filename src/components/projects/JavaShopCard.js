@@ -14,10 +14,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
 import YouTubeIcon from "@mui/icons-material/YouTube"
 import JavaShop from "../../assets/JavaShop.png"
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
-import ListItemIcon from "@mui/material/ListItemIcon"
-import ListItemText from "@mui/material/ListItemText"
 
 import GitHubIcon from "@mui/icons-material/GitHub"
 import CodeIcon from "@mui/icons-material/Code"
@@ -42,7 +38,7 @@ function MemesCard() {
     setExpanded(!expanded)
   }
   return (
-    <>
+    <div style={{ boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)" }}>
       <Card sx={{ maxWidth: 345, padding: "10px" }}>
         <CardHeader
           action={
@@ -69,6 +65,10 @@ function MemesCard() {
           </Typography>
           <Typography variant="caption" color="text.secondary">
             JavaScript | CSS | HTML | JSON Server
+          </Typography>
+
+          <Typography variant="caption" color="text.secondary">
+            {` `}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -98,55 +98,35 @@ function MemesCard() {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-                Icon with text
-              </Typography>
-
-              <List dense={dense}>
-                <ListItem sx={{ fontSize: "10px" }}>
-                  <ListItemIcon>
-                    <CodeIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Designed custom modal forms
-                    and an interactive shopping cart for a realistic shopping
-                    experience"
-                  />
-                  <ListItemText primary="Single-line item" />
-                  <ListItemText
-                    primary=" Leveraged vanilla JavaScript and CSS to achieve DOM
-                    manipulation"
-                  />
-                  <ListItemText primary="Utilized JSON server to persist post and delete requests" />
-                </ListItem>
-              </List>
-            </Box>
-
             <Typography align="center" paragraph>
               Description
             </Typography>
-            <Typography paragraph>
-              <Typography
-                sx={{ justifyContent: "center" }}
-                variant="caption"
-                align="left"
-              >
-                <CodeIcon fontSize="small" /> Designed custom modal forms and an
-                interactive shopping cart for a realistic shopping experience
-              </Typography>
+            <Typography align="left">
+              <ul>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Designed custom modal forms and an interactive shopping cart
+                    for a realistic shopping experience
+                  </Typography>
+                </li>
 
-              <Typography variant="caption" align="left">
-                Leveraged vanilla JavaScript and CSS to achieve DOM manipulation
-              </Typography>
-              <Typography variant="caption" align="left">
-                Utilized JSON server to persist post and delete requests
-              </Typography>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Leveraged vanilla JavaScript and CSS to achieve DOM
+                    manipulation{" "}
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Utilized JSON server to persist post and delete requests{" "}
+                  </Typography>
+                </li>
+              </ul>
             </Typography>
           </CardContent>
         </Collapse>
       </Card>
-    </>
+    </div>
   )
 }
 

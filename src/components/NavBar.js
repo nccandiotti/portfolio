@@ -1,9 +1,11 @@
-import * as React from "react"
+import { useRef } from "react"
+import { useNavigate } from "react-router-dom"
 import Typography from "@mui/material/Typography"
 import Breadcrumbs from "@mui/material/Breadcrumbs"
 import Button from "@mui/material/Button"
 import IconButton from "@mui/material/IconButton"
 import Link from "@mui/material/Link"
+import Projects from "./Projects"
 
 //ICONS
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
@@ -87,27 +89,63 @@ function handleClick(event) {
 }
 
 export default function NavBar() {
+  let navigate = useNavigate()
+
+  const projectRef = useRef()
+
+  function handleBackClick() {
+    projectRef.current.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div
-      style={{ alignItems: "center" }}
+      style={{ display: "flex", justifyContent: "center" }}
       role="presentation"
       onClick={handleClick}
     >
       <Breadcrumbs color="#66D9EF" separator="|" aria-label="breadcrumb">
-        <Link color="#fff" underline="hover" href="/">
+        <Link
+          color="#fff"
+          underline="hover"
+          href="/"
+          ref={projectRef}
+          onClick={handleBackClick}
+        >
           Projects
         </Link>
         <Link
           color="#fff"
           underline="hover"
-          href="/getting-started/installation/"
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/document/d/e/2PACX-1vTRY-rmanVup30jUNX84g-WWcCXzEcplj01SO_USqz47DeS3HGIOhCRG4jtztMg0rAW-fUWIXj-GNtq/pub"
+            )
+          }
         >
           Resume
         </Link>
+        <Link
+          color="#fff"
+          underline="hover"
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/nicole-candiotti/")
+          }
+        >
+          LinkedIn
+        </Link>
+
+        <Link
+          color="#fff"
+          underline="hover"
+          onClick={() => window.open("https://github.com/nccandiotti")}
+        >
+          GitHub
+        </Link>
+
         <Link color="#fff" underline="hover">
           Speech-Language Pathology
         </Link>
-        <IconButton>
+        {/* <IconButton>
           {" "}
           <GitHubIcon
             fontSize="large"
@@ -115,15 +153,7 @@ export default function NavBar() {
             onClick={() => window.open("https://github.com/nccandiotti")}
           />
         </IconButton>
-        <Link
-          sx={{ textdecoration: "none", color: " #F92672 " }}
-          onClick={() =>
-            window.open("https://www.linkedin.com/in/nicole-candiotti/")
-          }
-        >
-          Linkedin
-        </Link>
-        {/* <IconButton>
+        <IconButton>
           {" "}
           <LinkedInIcon
             fontSize="large"
@@ -132,8 +162,7 @@ export default function NavBar() {
               window.open("https://www.linkedin.com/in/nicole-candiotti/")
             }
           />
-        </IconButton> */}
-
+        </IconButton>
         <IconButton>
           {" "}
           <ArticleIcon
@@ -145,8 +174,11 @@ export default function NavBar() {
               )
             }
           />
-        </IconButton>
+        </IconButton> */}
       </Breadcrumbs>
     </div>
   )
+}
+
+{
 }

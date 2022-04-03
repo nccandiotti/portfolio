@@ -30,7 +30,7 @@ function Skills() {
       <Typography align="left" variant="h3">
         <span style={{ color: "#A6E22E" }}>let </span>
         <span style={{ color: "#fff" }}>skills </span>
-        <span style={{ color: "#F92672 " }}>=</span>
+        <span style={{ color: "#F92672 " }}>= </span>
         <span style={{ color: " #E6DB74" }}>{`[`}</span> <br />
         <Typography variant="h5" sx={{ color: "#fff" }}>
           {" "}
@@ -39,9 +39,7 @@ function Skills() {
           <span style={{ color: "#66D9EF" }}>
             [
             <span style={{ color: "#E6DB74" }}>
-              {" "}
-              "JavaScript", "Ruby", "HTML", "CSS", "SQL", "PostgresSQL", "SQL",
-              "SQLite3"
+              {` JavaScript,  Ruby,  HTML,  CSS,  SQL,  PostgresSQL, SQLite3 `}
             </span>
             ]
           </span>
@@ -56,8 +54,7 @@ function Skills() {
             [
             <span style={{ color: "#E6DB74" }}>
               {" "}
-              "React", "Rails", "Sinatra", "MUI", "MapBox", "RESTful API's",
-              "Active Record"
+              {`React, Rails, Sinatra, MUI, MapBox, RESTful API's,  Active Record `}
             </span>
             ] <span style={{ color: " #AE81FF " }}>{`}`} </span>
           </span>
@@ -70,9 +67,8 @@ function Skills() {
           <span style={{ color: "#66D9EF" }}>
             [
             <span style={{ color: "#E6DB74" }}>
-              {" "}
-              "Git", "NPM", "Visual Studio Code", "Postman", "pair programming",
-              "test-driven programming"
+              {` Git, NPM, Visual Studio Code, Postman, pair programming,
+              test-driven programming `}
             </span>
             ]
           </span>

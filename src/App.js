@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar"
 import About from "./components/About"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
+import Footer from "./components/Footer"
 
 // MUI Components
 import Box from "@mui/material/Box"
@@ -56,6 +57,7 @@ function App() {
         <Skills />
         <Projects />
       </Container>
+      <Footer />
     </>
   )
 }

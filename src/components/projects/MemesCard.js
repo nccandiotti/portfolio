@@ -47,7 +47,7 @@ function MemesCard() {
           subheader="JavaScript React "
         />
         <Typography variant="caption">
-          Custom Caption memes using the imgflip meme library
+          Custom caption memes with the imgflip library
         </Typography>
         <CardMedia
           component="img"
@@ -95,16 +95,26 @@ function MemesCard() {
               Description
             </Typography>
 
-            <Typography align="center" variant="caption">
-              Designed frontend using React functional components, hooks, and
-              React Router Dom
-            </Typography>
-            <Typography align="center" variant="caption">
-              Utilized third party API and JSON server as endpoints for CRUD
-              methodology
-            </Typography>
-            <Typography align="center" variant="caption">
-              Applied custom CSS and styled components{" "}
+            <Typography align="left">
+              <ul>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Designed frontend using React functional components, hooks,
+                    and React Router Dom
+                  </Typography>{" "}
+                </li>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Utilized third party API and JSON server as endpoints for
+                    CRUD methodology
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Applied custom CSS and styled components{" "}
+                  </Typography>
+                </li>
+              </ul>
             </Typography>
           </CardContent>
         </Collapse>

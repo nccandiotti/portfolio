@@ -2,31 +2,28 @@ import { useState } from "react"
 import { styled } from "@mui/material/styles"
 import Card from "@mui/material/Card"
 import Grid from "@mui/material/Grid"
-import Container from "@mui/material/Container"
-import Masonry from "@mui/lab/Masonry"
 
 import IconButton from "@mui/material/IconButton"
 import Typography from "@mui/material/Typography"
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
-import MoreVertIcon from "@mui/icons-material/MoreVert"
-import YouTubeIcon from "@mui/icons-material/YouTube"
-import GitHubIcon from "@mui/icons-material/GitHub"
-import CodeIcon from "@mui/icons-material/Code"
+
 import Box from "@mui/material/Box"
-
-import museummapper from "../assets/museummapper.png"
-import qom from "../assets/QOM.png"
-import JavaShop from "../assets/JavaShop.png"
-
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
-import ListItemIcon from "@mui/material/ListItemIcon"
-import ListItemText from "@mui/material/ListItemText"
 
 import JavaShopCard from "./projects/JavaShopCard"
 import MemesCard from "./projects/MemesCard"
 import Museums from "./projects/Museums"
 import { createTheme, ThemeProvider } from "@mui/material/styles"
+const theme = createTheme({
+  palette: {
+    text: {
+      primary: "#fff",
+    },
+  },
+  typography: {
+    fontWeight: 400,
+    fontFamily: "Raleway",
+    color: "white",
+  },
+})
 
 const cards = [<Museums />, <JavaShopCard />, <MemesCard />]
 
@@ -77,23 +74,22 @@ function Projects() {
             <span style={{ color: "#A6E22E" }}>Projects</span>
             <span style={{ color: "#E6DB74" }}> {`() {`}</span>
           </Typography>
+        </ThemeProvider>
+        <Typography
+          sx={{ fontFamily: "Raleway", align: "left", margin: "10px 40px" }}
+          // variant="paragraph"
+          color="#fff"
+          theme={theme}
+          align="left"
+        >
+          <Card />
+        </Typography>
+        <Box style={{ padding: "10px" }} sx={{ flexGrow: 1 }}>
+          <Grid container spacing={3}>
+            {createCards}
+          </Grid>
 
-          <Typography
-            sx={{ fontFamily: "Raleway", align: "left", margin: "10px 40px" }}
-            // variant="paragraph"
-            color="#fff"
-            theme={theme}
-            align="left"
-          >
-            <Card />
-          </Typography>
-
-          <Box style={{ padding: "10px" }} sx={{ flexGrow: 1 }}>
-            <Grid container spacing={1}>
-              {createCards}
-            </Grid>
-
-            {/* <Grid container spacing={1}>
+          {/* <Grid container spacing={1}>
             {/* <Grid container spacing={1}>
               <Grid item xs={8}>
                 <Container
@@ -111,13 +107,12 @@ function Projects() {
               </Grid>
               <Grid item xs={4}></Grid>
             </Grid> */}
-          </Box>
-
-          <Grid container space={4}>
-            <Grid item xs={3}></Grid>
-          </Grid>
-
-          {/* closing function bracket */}
+        </Box>
+        <Grid container space={4}>
+          <Grid item xs={3}></Grid>
+        </Grid>
+        {/* closing function bracket */}
+        <ThemeProvider theme={theme}>
           <Typography variant="h3" align="left">
             <span style={{ color: "#E6DB74" }}> {`}`}</span>
           </Typography>
