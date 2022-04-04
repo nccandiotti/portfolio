@@ -54,9 +54,8 @@ function About() {
           pathologist, I hope to contribute a unique perspective on accessibilty
           in technology. My toolkit currently includes JavaScript, React, Ruby,
           and Rails. I'm a continuous learner and next on my list are Python and
-          React Native. My love for languages, problem solving and exploring the
-          intersection of communication and technology has led me to find my
-          purpose as a developer.
+          React Native. My love for languages, problem solving, and teamwork
+          have led me to find my purpose as a developer.
         </Typography>
 
         {/* closing function bracket */}
