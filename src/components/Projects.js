@@ -67,7 +67,7 @@ function Projects() {
 
   return (
     <>
-      <div style={{}}>
+      <div style={{ marginBottom: "150px" }}>
         <ThemeProvider theme={theme}>
           <Typography align="left" variant="h3">
             <span style={{ color: "#66D9EF" }}>function </span>

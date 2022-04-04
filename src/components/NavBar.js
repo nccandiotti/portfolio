@@ -89,8 +89,6 @@ function handleClick(event) {
 }
 
 export default function NavBar() {
-  let navigate = useNavigate()
-
   const projectRef = useRef()
 
   function handleBackClick() {
@@ -99,7 +97,12 @@ export default function NavBar() {
 
   return (
     <div
-      style={{ display: "flex", justifyContent: "center" }}
+      className="name"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        marginBottom: "20px",
+      }}
       role="presentation"
       onClick={handleClick}
     >
@@ -140,6 +143,13 @@ export default function NavBar() {
           onClick={() => window.open("https://github.com/nccandiotti")}
         >
           GitHub
+        </Link>
+        <Link
+          color="#fff"
+          underline="hover"
+          onClick={() => window.open("https://medium.com/@nccandiotti")}
+        >
+          Medium
         </Link>
 
         <Link color="#fff" underline="hover">

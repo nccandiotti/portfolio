@@ -32,8 +32,6 @@ const theme = createTheme({
 function App() {
   return (
     <>
-      {" "}
-      {/* <InteractiveList /> */}
       <Container
         sx={{ backgroundColor: "#272822" }}
         align="center"
@@ -45,11 +43,26 @@ function App() {
           alignItems="center"
           justifyContent="center"
         >
-          <Typography
-            theme={theme}
-            color="#fff"
-            variant="h1"
-          >{`< Nicole Candiotti >`}</Typography>
+          <Typography theme={theme} color="#fff" variant="h1">
+            <span className="name">{`<`}</span>
+            <span className="name">{`N`}</span>
+            <span className="name">{`i`}</span>
+            <span className="name">{`c`}</span>
+            <span className="name">{`o`}</span>
+            <span className="name">{`l`}</span>
+            <span className="name">{`e`}</span>
+            <span className="name">{` `}</span>
+            <span className="name">{`C`}</span>
+            <span className="name">{`a`}</span>
+            <span className="name">{`n`}</span>
+            <span className="name">{`d`}</span>
+            <span className="name">{`i`}</span>
+            <span className="name">{`o`}</span>
+            <span className="name">{`t`}</span>
+            <span className="name">{`t`}</span>
+            <span className="name">{`i`}</span>
+            <span className="name">{`>`}</span>
+          </Typography>
         </Box>
         <NavBar />
 

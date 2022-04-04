@@ -12,15 +12,15 @@ import IconButton from "@mui/material/IconButton"
 
 export default function Footer() {
   return (
-    <Box sx={{ width: "100vw" }}>
-      <BottomNavigation>
+    <Box sx={{ backgroundColor: " #272822a7", width: "100vw" }}>
+      <BottomNavigation sx={{ backgroundColor: " #464644" }}>
         {/* <IconButton>
           <a href="mailto:nccandiotti@gmail.com">
             {" "}
             {<EmailOutlinedIcon size="large"></EmailOutlinedIcon>}
           </a>
         </IconButton> */}
-        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+        {/* <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} /> */}
         <BottomNavigationAction
           label="Back to Top"
           icon={

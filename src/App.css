@@ -1,3 +1,9 @@
 body {
   background-color: #272822;
 }
+
+.name:hover {
+  color: #f92672;
+
+  font-weight: 500;
+}
