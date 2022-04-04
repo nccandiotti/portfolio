@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.79eb2a6c.css",
-    "main.js": "/portfolio/static/js/main.c7520ec2.js",
+    "main.js": "/portfolio/static/js/main.9207640a.js",
     "static/media/museummapper.png": "/portfolio/static/media/museummapper.2345ca6b8a96f6ad9c35.png",
     "static/media/QOM.png": "/portfolio/static/media/QOM.8fc3a96b1e6cf2337c07.png",
     "static/media/JavaShop.png": "/portfolio/static/media/JavaShop.483c7bdf9c4ad800c087.png",
     "index.html": "/portfolio/index.html",
     "main.79eb2a6c.css.map": "/portfolio/static/css/main.79eb2a6c.css.map",
-    "main.c7520ec2.js.map": "/portfolio/static/js/main.c7520ec2.js.map"
+    "main.9207640a.js.map": "/portfolio/static/js/main.9207640a.js.map"
   },
   "entrypoints": [
     "static/css/main.79eb2a6c.css",
-    "static/js/main.c7520ec2.js"
+    "static/js/main.9207640a.js"
   ]
 }
