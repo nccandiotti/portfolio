@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.79eb2a6c.css","mappings":"AAAA,KACE,wBACF,CAEA,YACE,aAAc,CAEd,eACF","sources":["App.css"],"sourcesContent":["body {\n  background-color: #272822;\n}\n\n.name:hover {\n  color: #f92672;\n\n  font-weight: 500;\n}\n"],"names":[],"sourceRoot":""}

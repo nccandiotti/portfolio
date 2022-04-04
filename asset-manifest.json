@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.79eb2a6c.css",
+    "main.js": "/react-gh-pages/static/js/main.e0480051.js",
+    "static/media/museummapper.png": "/react-gh-pages/static/media/museummapper.2345ca6b8a96f6ad9c35.png",
+    "static/media/QOM.png": "/react-gh-pages/static/media/QOM.8fc3a96b1e6cf2337c07.png",
+    "static/media/JavaShop.png": "/react-gh-pages/static/media/JavaShop.483c7bdf9c4ad800c087.png",
+    "index.html": "/react-gh-pages/index.html",
+    "main.79eb2a6c.css.map": "/react-gh-pages/static/css/main.79eb2a6c.css.map",
+    "main.e0480051.js.map": "/react-gh-pages/static/js/main.e0480051.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79eb2a6c.css",
+    "static/js/main.e0480051.js"
+  ]
+}
