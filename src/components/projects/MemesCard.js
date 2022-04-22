@@ -36,22 +36,14 @@ function MemesCard() {
   }
   return (
     <>
-      <Card sx={{ maxWidth: 345, padding: "10px" }}>
-        <CardHeader
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title="Queen of Memes"
-          subheader="JavaScript React "
-        />
+      <Card sx={{ width: "75vw", padding: "10px" }}>
+        <CardHeader title="Queen of Memes" subheader="JavaScript React " />
         <Typography variant="caption">
           Custom caption memes with the imgflip library
         </Typography>
         <CardMedia
           component="img"
-          height="194"
+          height="auto"
           image={qom}
           alt="Museum Mapper"
           border="1px solid"
@@ -67,7 +59,9 @@ function MemesCard() {
         <CardActions disableSpacing>
           <IconButton
             onClick={() =>
-              window.open("https://www.youtube.com/watch?v=9qAre5FtZfs")
+              window.open(
+                "https://www.loom.com/share/0827bb10a69c4ff4810708e08567daca"
+              )
             }
             aria-label="youtube link"
           >

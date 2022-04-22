@@ -27,15 +27,15 @@ const theme = createTheme({
 })
 
 const cards = [
+  <BlondeBohemeCard />,
   <Museums />,
   <JavaShopCard />,
   <MemesCard />,
-  <BlondeBohemeCard />,
 ]
 
 const createCards = cards.map((card) => (
-  <Grid item xs={4}>
-    <Box key={card.index}>{card}</Box>
+  <Grid sx={{ width: "75%" }} item xs={12}>
+    <div key={card.index}>{card}</div>
   </Grid>
 ))
 
@@ -94,25 +94,6 @@ function Projects() {
           <Grid container spacing={3}>
             {createCards}
           </Grid>
-
-          {/* <Grid container spacing={1}>
-            {/* <Grid container spacing={1}>
-              <Grid item xs={8}>
-                <Container
-                  sx={{
-                    maxWidth: "lg",
-                    alignItems: "center",
-                    overflow: "auto",
-                    maxHeight: 900,
-                  }}
-                >
-                  <Masonry columns={3} spacing={2}>
-                    {createCards}
-                  </Masonry>
-                </Container>
-              </Grid>
-              <Grid item xs={4}></Grid>
-            </Grid> */}
         </Box>
         <Grid container space={4}>
           <Grid item xs={3}></Grid>

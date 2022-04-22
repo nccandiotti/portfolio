@@ -41,22 +41,17 @@ function Museums() {
   return (
     <>
       {" "}
-      <Card item xs={3} sx={{ maxWidth: 345, padding: "10px" }}>
-        <CardHeader
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title="Museum Mapper"
-          subheader="Full Stack Application"
-        />
+      <Card item xs={3} sx={{ width: "75vw", padding: "10px" }}>
+        <CardHeader title="Museum Mapper" subheader="Full Stack Application" />
         <Typography variant="caption">
           Explore DC & tickets to Smithsonian Museums
+          <br />
+          <br />
         </Typography>
+
         <CardMedia
           component="img"
-          height="194"
+          height="auto"
           image={museummapper}
           alt="Museum Mapper"
           border="1px solid"
@@ -73,7 +68,9 @@ function Museums() {
         <CardActions disableSpacing>
           <IconButton
             onClick={() =>
-              window.open("https://www.youtube.com/watch?v=KuQ8JlcgEBU")
+              window.open(
+                "https://www.loom.com/share/113f901ac82f4742b1face0276535646"
+              )
             }
             aria-label="youtube link"
           >
@@ -126,12 +123,6 @@ function Museums() {
                     Integrated third party data via MapBox and Stripe{" "}
                   </Typography>{" "}
                 </li>{" "}
-                <li>
-                  <Typography variant="caption" align="left">
-                    Designed sleek and intuitive UI with JavaScript React, MUI,
-                    and custom CSS
-                  </Typography>
-                </li>
               </ul>
             </Typography>
           </CardContent>

@@ -39,23 +39,21 @@ function MemesCard() {
     setExpanded(!expanded)
   }
   return (
-    <div style={{ boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)" }}>
-      <Card sx={{ maxWidth: 345, padding: "10px" }}>
+    <div>
+      <Card sx={{ width: "75vw", padding: "10px" }}>
         <CardHeader
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
           title="The Blonde Boheme"
-          subheader="The Blonde Boheme"
+          subheader="Full Stack Application"
         />
         <Typography variant="caption">
-          A modern coffee shop landing page
+          Freelance full stack web app for a local hair salon, including new
+          client consultations, booking system and payment
+          <br />
         </Typography>
         <CardMedia
           component="img"
-          height="194"
+          height="auto"
+          position="cover"
           image={BlondeBohemePic}
           alt="Java Shop"
           borderRadius="10"
@@ -65,7 +63,7 @@ function MemesCard() {
             Technologies:
           </Typography>
           <Typography variant="caption" color="text.secondary">
-            JavaScript | CSS | HTML | JSON Server
+            JavaScript React | Mui | Ruby on Rails |PostgreSQL | Active Storage
           </Typography>
 
           <Typography variant="caption" color="text.secondary">
@@ -108,20 +106,27 @@ function MemesCard() {
               <ul>
                 <li>
                   <Typography variant="caption" align="left">
-                    Designed custom modal forms and an interactive shopping cart
-                    for a realistic shopping experience
+                    Created a self generated, RESTful API using Rails and
+                    PostgresSQL with image uploads via Active Storage
                   </Typography>
                 </li>
 
                 <li>
                   <Typography variant="caption" align="left">
-                    Leveraged vanilla JavaScript and CSS to achieve DOM
-                    manipulation{" "}
+                    Incorporated multiple user views (public, user, admin) for a
+                    dynamic frontend user experience
                   </Typography>
                 </li>
                 <li>
                   <Typography variant="caption" align="left">
-                    Utilized JSON server to persist post and delete requests{" "}
+                    Achieved full CRUD methodology by integrating guest
+                    consultation intake forms, payment, and a booking system
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="caption" align="left">
+                    Designed sleek and intuitive UI with JavaScript React, MUI,
+                    and custom CSS
                   </Typography>
                 </li>
               </ul>

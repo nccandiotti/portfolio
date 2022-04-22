@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
 import YouTubeIcon from "@mui/icons-material/YouTube"
-import JavaShop from "../../assets/JavaShop.png"
+import JavaShop from "../../assets/JavaShopfront.png"
 
 import GitHubIcon from "@mui/icons-material/GitHub"
 import CodeIcon from "@mui/icons-material/Code"
@@ -38,23 +38,15 @@ function MemesCard() {
     setExpanded(!expanded)
   }
   return (
-    <div style={{ boxShadow: "2px 2px 2px 1px rgba(0, 0, 0, 0.2)" }}>
-      <Card sx={{ maxWidth: 345, padding: "10px" }}>
-        <CardHeader
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title="JavaShop"
-          subheader="JavaScript"
-        />
+    <div>
+      <Card sx={{ width: "75vw", padding: "10px" }}>
+        <CardHeader title="JavaShop" subheader="JavaScript" />
         <Typography variant="caption">
           A modern coffee shop landing page
         </Typography>
         <CardMedia
           component="img"
-          height="194"
+          height="auto"
           image={JavaShop}
           alt="Java Shop"
           borderRadius="10"
@@ -65,15 +57,20 @@ function MemesCard() {
           </Typography>
           <Typography variant="caption" color="text.secondary">
             JavaScript | CSS | HTML | JSON Server
+            <br />
           </Typography>
-
+          <br />
           <Typography variant="caption" color="text.secondary">
             {` `}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
           <IconButton
-            onClick={() => window.open("https://youtu.be/NT9CAkm643w")}
+            onClick={() =>
+              window.open(
+                "https://www.loom.com/share/dcc3df61b8704998995f0dfb7e1a5b87"
+              )
+            }
             aria-label="youtube link"
           >
             <YouTubeIcon size="large" />
