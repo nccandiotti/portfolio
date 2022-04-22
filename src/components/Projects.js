@@ -10,6 +10,7 @@ import Box from "@mui/material/Box"
 
 import JavaShopCard from "./projects/JavaShopCard"
 import MemesCard from "./projects/MemesCard"
+import BlondeBohemeCard from "./projects/BlondeBohemeCard"
 import Museums from "./projects/Museums"
 import { createTheme, ThemeProvider } from "@mui/material/styles"
 const theme = createTheme({
@@ -25,7 +26,12 @@ const theme = createTheme({
   },
 })
 
-const cards = [<Museums />, <JavaShopCard />, <MemesCard />]
+const cards = [
+  <Museums />,
+  <JavaShopCard />,
+  <MemesCard />,
+  <BlondeBohemeCard />,
+]
 
 const createCards = cards.map((card) => (
   <Grid item xs={4}>

@@ -70,6 +70,7 @@ function App() {
         <Skills />
         <Projects />
       </Container>
+
       <Footer />
     </>
   )
